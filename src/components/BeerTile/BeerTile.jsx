@@ -1,24 +1,26 @@
-import React from 'react'
+import React from "react";
+import BeerCard from "../BeerCard/BeerCard";
 import "./BeerTile.scss";
 
 const BeerTile = (props) => {
   const { beersArr } = props;
+ 
 
-  const beerListJSX = beersArr.map((beer, index) => (
-    <div className="beer-tile" key={index + 1}>
-      <img className="beer-tile__img" src={beer.image_url} alt={beer.tagline} />
-      <h3 className="beer-title__heading">{beer.name}</h3>
-      <p className="beer-tile__content">{beer.description}</p>
-    </div>
+  const beerListJSX = beersArr.map((beer) => (
+    <BeerCard
+      card_image={beer.image_url}
+      card_tagline={beer.tagline}
+      card_name={beer.name}
+      card_description={beer.description}
+      card_id={beer.id}
+    />
   ));
 
   return (
     <>
-      <div className="beer-list" >
-        {beerListJSX}
-        </div>
+      <div className="beer-list">{beerListJSX}</div>
     </>
   );
 };
 
-export default BeerTile
+export default BeerTile;

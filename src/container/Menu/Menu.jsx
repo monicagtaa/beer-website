@@ -1,6 +1,7 @@
 import React from "react";
 import "./Menu.scss"
 import BeerTile from "../../components/BeerTile/BeerTile";
+import NavBar from "../NavBar/NavBar"
 
 const Menu = (props) => {
   const { beersArr } = props;
@@ -9,13 +10,13 @@ const Menu = (props) => {
 
   return (
    <>
-      <div className="menu">
-        <header className="header">
-          <h1>Beer Discovery</h1>
-        </header>
-    
-       
+     <div className="mainPage">
+        
+        <section>
+        <NavBar beersArr={beersArr}/>
+        </section>
       <section className="tiles">
+      
         <div className="all-beers">
         <BeerTile  title="Beers Types" beersArr={beersArr}/>
         </div>

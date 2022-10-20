@@ -26,7 +26,7 @@ console.log(filteredBeers)
   return (
     <>
       <div className="NavBar">
-        <div className="NavBar__Searchbox">
+        <div className="NavBar__searchbox">
           <SearchBox
             label={"beers"}
             searchTerm={searchTerm}
@@ -35,15 +35,15 @@ console.log(filteredBeers)
         </div>
         <div className="NavBar__checkedbox">
           <label>
-            <input type="checkbox" checked="checked" />
+            <input type="checkbox" />
             {"High ABV (> 6.0%"}
           </label>
           <label>
-            <input type="checkbox" checked="checked" />
+            <input type="checkbox" />
             {"Classic Range"}
           </label>
           <label>
-            <input type="checkbox" checked="checked" />
+            <input type="checkbox" />
             {"Acidic (ph < 4)"}
           </label>
         </div>

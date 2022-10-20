@@ -1,0 +1,42 @@
+@use "../../assets/sass/_variables.scss"as *;
+
+.beer-card {
+  // position: relative;
+  border-radius: 15px;
+  overflow: visible;
+  box-shadow: 0px 10px 10px rgba($color-black, 0.25);
+  padding: 10px;
+ 
+  
+
+  &>* {
+    margin: 10px 0;
+  }
+
+  &__img {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 300px;
+    width: auto;
+  }
+
+  &__heading {
+    font-size: 25px;
+    transition: ease-in-out;
+    font-family: Druk, sans-serif;
+    padding: 10px 0px 0px 0px;
+
+
+  }
+
+  &__desc {
+    // height: 100%;
+    top: 0;
+    overflow-y: auto;
+    white-space: pre-line;
+    
+  }
+
+ 
+}
