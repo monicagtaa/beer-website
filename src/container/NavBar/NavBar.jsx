@@ -18,7 +18,6 @@ const NavBar = (props) => {
  
   const filteredBeers = beersArr.filter((beer) => {
     const beerTitleLower = beer.name.toLowerCase();
-
     return beerTitleLower.includes(searchTerm) && beer.image_url;
   });
 console.log(filteredBeers)
@@ -34,15 +33,15 @@ console.log(filteredBeers)
           />
         </div>
         <div className="NavBar__checkedbox">
-          <label>
+          <label className = "NavBar__boxLabel">
             <input type="checkbox" />
             {"High ABV (> 6.0%"}
           </label>
-          <label>
+          <label className = "NavBar__boxLabel">
             <input type="checkbox" />
             {"Classic Range"}
           </label>
-          <label>
+          <label className = "NavBar__boxLabel">
             <input type="checkbox" />
             {"Acidic (ph < 4)"}
           </label>

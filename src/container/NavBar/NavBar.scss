@@ -16,11 +16,19 @@
 
   }
 
+  &__boxLabel {
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-family: Druk, sans-serif;
+  }
+
   &__checkedbox {
     display: flex;
     flex-direction: column;
     width: fit-content;
-    margin-top: 30px;
-    gap: 10px
+    margin-top: 20px;
+    gap: 10px;
+    // margin-right: 50px;
+    // font-size: 1.5rem;
   }
 }
