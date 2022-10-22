@@ -16,7 +16,6 @@ const SearchBox = (props) => {
         name={label}
         value={searchTerm}
         onInput={handleInput}
-        
       />
     </form>
   );

@@ -13,7 +13,7 @@ const App = () => {
   return (
     <>
       <header className="header">
-        <h1>Beer Discovery</h1>
+        <h1>Punk-Api Beer Discovery</h1>
         <p className="header__msg">
         {newText}
       </p>

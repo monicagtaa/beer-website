@@ -11,6 +11,7 @@ const BeerTile = (props) => {
       card_image={beer.image_url}
       card_tagline={beer.tagline}
       card_name={beer.name}
+      card_firstbrew={beer.first_brewed}
       card_description={beer.description}
       card_id={beer.id}
     />

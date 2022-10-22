@@ -19,23 +19,22 @@
     align-content: center;
     height: 300px;
     width: auto;
+    // transform: rotate(20deg);
+    border-radius: 35%;
   }
 
   &__heading {
-    font-size: 25px;
+    font-size: 24px;
     transition: ease-in-out;
     font-family: Druk, sans-serif;
     padding: 10px 0px 0px 0px;
-
-
   }
 
-  &__desc {
+  &__desc &__firstbrew {
     // height: 100%;
     top: 0;
     overflow-y: auto;
-    white-space: pre-line;
-    
+    white-space: pre-line; 
   }
 
  
