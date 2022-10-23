@@ -1,14 +1,17 @@
 import React from "react";
 import "./App.scss";
 import beers from "./data/beers.js";
-import Menu from "./container/Menu/Menu";
-
+import filters from "./data/filters.js";
+// import Menu from "./container/Menu/Menu";
+import MenuV2 from "./container/MenuV2/MenuV2";
 
 const App = () => {
   const text = "Check out the brews we're pouring \n all-freakin'-yearlong"
   let newText = text.split('\n').map(i => {
     return <p>{i}</p>
 });
+
+
 
   return (
     <>
@@ -20,7 +23,7 @@ const App = () => {
       </header>
      
       <div>
-        <Menu beersArr={beers} />
+        <MenuV2 beersArr={beers} filters={filters} />
       </div>
     </>
   );
