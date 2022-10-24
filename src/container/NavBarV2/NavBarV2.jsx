@@ -72,6 +72,7 @@ const NavBar = (props) => {
           />
         </div>
         <ul className="filters-list">
+          {/* <FiltersList filtersArr = {filtersArr} handleOnChange = {handleOnChange} checkedState = {checkedState} /> */}
           {filtersJSX}
         </ul>
 

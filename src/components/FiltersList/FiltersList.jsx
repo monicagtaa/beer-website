@@ -2,8 +2,10 @@ import React from "react";
 // import FilterItem from "../FilterItem/FilterItem"
 
 const FiltersList = (props) => {
- const { filters, handleOnChange, checkedState } = props;
-  const filtersJSX = filters.map((filter, idFilter) => {
+ const { filtersArr, handleOnChange, checkedState } = props;
+  
+ 
+ const filtersJSX = filtersArr.map((filter, idFilter) => {
     return (
       <li key={idFilter}>
         <div className="filters-list-item">

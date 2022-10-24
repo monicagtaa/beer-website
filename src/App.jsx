@@ -11,7 +11,43 @@ const App = () => {
     return <p>{i}</p>
 });
 
+// const url = "https://api.punkapi.com/v2/beers/";
+// const [beers, setBeers] = useState([]);
 
+// //////////////////////////////////
+// const [profiles, setProfiles] = useState([]);
+
+// useEffect(()=>{
+//   getUsersGender();
+// },[selected]);
+
+// const getUsers = async () => {
+//   const res = await fetch(url);
+//   const data = await res.json();
+//   // clean the data!
+//   const newBeers = data.results.map((beers) => cleanProfile(beers));
+//   setBeers(newBeers);
+// }
+// const cleanProfile = (profile) => {
+//   return {
+//     name: profile.name.first +" " +profile.name.last,
+//     email: profile.email,
+//     phoneNumber: profile.phone,
+//     image: profile.picture.large
+//   }
+// }
+// const onChange =(event)=>{
+//   console.log(event.target.value);
+//   setGender(event.target.value);
+// }
+
+// const getUsersGender = async () => {
+//   let res=await fetch(`${url}${selected}`);
+//   const data = await res.json();
+//   // clean the data!
+//   const newProfiles = data.results.map((profile) => cleanProfile(profile));
+  
+/////////////////////////////////////
 
   return (
     <>
