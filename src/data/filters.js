@@ -1,7 +1,7 @@
 const filters = [
   {
     idFilter: 1,
-    text: "High ABV (>6/0%)",
+    text: "High ABV (>6.0%)",
     checked: false,
     field: "abv",
     operator: ">",
@@ -17,7 +17,7 @@ const filters = [
   },
   {
     idFilter: 3,
-    text: "Acidic (ph < 4)",
+    text: "Acidic (ph <4)",
     checked: false,
     field: "ph",
     operator: "<",

@@ -17,15 +17,19 @@ const NavBar = (props) => {
   /////////////////////////////////////////////////////
   const [checkedState, setCheckedState] = useState(
     new Array(filters.length).fill(false) // how to remove JavaScript new Array()
+    
   );
+  console.log(checkedState)
   const [filtersArr, updateFiltersArr] = useState(filters);
-  const handelOnChange = (position) => {
+  const handleOnChange = (position) => {
+    console.log("HandleOnChange")
     const newFiltersArr = filtersArr.map((filter, idFilter) =>
     idFilter === position ? { ...filter, checked: !filter.checked } : { ...filter }
     );
     const updatedCheckedState = checkedState.map((item, idFilter) =>
       idFilter === position ? !item : item
     );
+    console.log("updatedCheckState")
     updateFiltersArr(newFiltersArr);
     setCheckedState(updatedCheckedState)
   };
@@ -52,7 +56,7 @@ const NavBar = (props) => {
               name={filter.text}
               value={filter.text}
               checked={checkedState[idFilter]}
-              onChange={() => handelOnChange(idFilter)}
+              onChange={() => handleOnChange(idFilter)}
             />
             <label htmlFor={`custom-checkbox-${idFilter}`}>{filter.text}</label>
           </div>

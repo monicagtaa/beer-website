@@ -1,45 +1,52 @@
 @use "./assets/sass/_variables.scss"as *;
 
 * {
+  // background-image: url("./assets/images/textuer-background.png");
   background-color: $color-background;
   margin: 0px;
-  // padding: 0 50px;
+  max-height: 1000000px;
+  margin: 0;
+  // background-image: url("./assets/images/textuer-background.png");
+  // background-repeat: repeat;
+  background-color: $color-background;
 }
 
-.mainPage {
-  display: grid;
-  grid-template-columns: 2fr 3fr;
-}
 
-.header {
-  text-align: center;
-  margin-top: 30px;
-  // animation: none;
-  // margin-bottom: 7px;
-  font-size: 35px;
-  font-family: Druk, sans-serif;
-  padding-top: 3px;
-  letter-spacing: .01em;
-  // font-weight: 900;
-  text-transform: uppercase;
-  line-height: .85;
-  // margin: 0 0 10px;
+  
+
+  .header {
+    text-align: center;
+    margin-top: 30px;
+    // animation: none;
+    // margin-bottom: 7px;
+    font-size: 35px;
+    font-family: Druk, sans-serif;
+    padding-top: 3px;
+    letter-spacing: .01em;
+    // font-weight: 900;
+    text-transform: uppercase;
+    line-height: .85;
+    text-shadow: 2px 2px 3px #ccc, 3px 3px 4px rgb(131, 131, 129);
 
 
-  &__msg {
-    font-size: 18px;
-    font-style: abadi-mt-condensed, Arial, Helvetica, sans-serif;
-    font-style: italic;
-    margin-bottom: 40px;
-    text-transform: none;
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    margin: 0 0 33px;
-    font: abadi-mt-condensed, Arial, Helvetica, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    // padding: 0 50px;
+    &__msg {
+      font-size: 18px;
+      // font-style: yank,cursive;
+      font-style: abadi-mt-condensed, Arial, Helvetica, sans-serif;
+      font-style: italic;
+      padding-top: 10px;
+      padding-bottom: 20px;
+      margin-bottom: 30px;
+      text-transform: none;
+      display: block;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      margin: 0 0 33px;
+      // font: abadi-mt-condensed, Arial, Helvetica, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      text-shadow: none;
+      // padding: 0 50px;
+    }
   }
-}

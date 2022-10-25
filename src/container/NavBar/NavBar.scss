@@ -17,7 +17,7 @@
   }
 
   &__boxLabel {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 400;
     font-family: Druk, sans-serif;
   }
@@ -26,7 +26,7 @@
     display: flex;
     flex-direction: column;
     width: fit-content;
-    margin-top: 20px;
+    // margin-top: 20px;
     gap: 10px;
     // margin-right: 50px;
     // font-size: 1.5rem;
@@ -45,12 +45,12 @@
     justify-content: space-between;
   }
   
-  .filters-list  {
-    // border-top: 1px solid #ccc;
-    margin-top: 1rem;
-    padding-top: 1rem;
+  // .filters-list  {
+  //   // border-top: 1px solid #ccc;
+  //   // margin-top: 1rem;
+  //   // padding-top: 1rem;
     
-  }
+  // }
   
   .filters-list-item label {
     vertical-align: text-bottom;

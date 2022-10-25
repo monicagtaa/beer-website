@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import "./Menu.scss";
 import BeerTile from "../../components/BeerTile/BeerTile";
 import NavBar from "../NavBar/NavBar";
@@ -18,16 +18,24 @@ const Menu = (props) => {
   const [checkedState, setCheckedState] = useState(
     new Array(filters.length).fill(false) // how to change JavaScript new Array()
   );
+  
   const [filtersArr, updateFiltersArr] = useState(filters);
-  const handelOnChange = (position) => {
+
+  const handleOnChange = (position) => {
+    console.log("HandleOnChange", filtersArr)
     const newFiltersArr = filtersArr.map((filter, idFilter) =>
     idFilter === position ? { ...filter, checked: !filter.checked } : { ...filter }
     );
+    // console.log(position)
+    // console.log(newFiltersArr)
     const updatedCheckedState = checkedState.map((item, idFilter) =>
       idFilter === position ? !item : item
     );
+    console.log("updatedCheckedState", checkedState)
     updateFiltersArr(newFiltersArr);
+    console.log("After HandleOnChange", filtersArr)
     setCheckedState(updatedCheckedState)
+    console.log("After updatedCheckedState", checkedState)
   };
 /////////////////////////////////////////////////////
   
@@ -48,15 +56,15 @@ const filteredBeers = beersArr.filter((beer) => {
              searchTerm={searchTerm}
              handleInput={handleInput}
              filtersArr={filtersArr}
-             handelOnChange={handelOnChange}
+             handleOnChange={handleOnChange}
              checkedState= {checkedState}
           />
         </section>
-        <section className="tiles">
-          <div className="all-beers">
+        {/* <section className="tiles"> */}
+          {/* <div className="all-beers"> */}
             <BeerTile title="Beers Types" beersArr={filteredBeers} />
-          </div>
-        </section>
+          {/* </div> */}
+        {/* </section> */}
       </div>
     </>
   );
