@@ -11,42 +11,57 @@
   background-color: $color-background;
 }
 
+.header {
+  text-align: center;
+  margin-top: 30px;
+  // animation: none;
+  // margin-bottom: 7px;
+  font-size: 35px;
+  font-family: Druk, sans-serif;
+  padding-top: 3px;
+  letter-spacing: .01em;
+  // font-weight: 900;
+  text-transform: uppercase;
+  line-height: .85;
+  text-shadow: 2px 2px 3px #ccc, 3px 3px 4px rgb(131, 131, 129);
 
-  
 
-  .header {
-    text-align: center;
-    margin-top: 30px;
-    // animation: none;
-    // margin-bottom: 7px;
-    font-size: 35px;
-    font-family: Druk, sans-serif;
-    padding-top: 3px;
-    letter-spacing: .01em;
-    // font-weight: 900;
-    text-transform: uppercase;
-    line-height: .85;
-    text-shadow: 2px 2px 3px #ccc, 3px 3px 4px rgb(131, 131, 129);
+  &__msg {
+    font-size: 18px;
+    // font-style: yank,cursive;
+    font-style: abadi-mt-condensed, Arial, Helvetica, sans-serif;
+    font-style: italic;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    text-transform: none;
+    display: block;
+    margin: 0 0 33px;
+    text-shadow: none;
+  }
 
+
+  @media screen and (max-width: 800px) {
+    height: 100%;
+    background-size: contain;
+    width: 100%;
+
+    * {
+      padding-top: 5px;
+    }
+
+    &__title {
+      font-size: 30px;
+      margin-top: 10px;
+      text-align: center;
+     
+    }
 
     &__msg {
-      font-size: 18px;
-      // font-style: yank,cursive;
-      font-style: abadi-mt-condensed, Arial, Helvetica, sans-serif;
-      font-style: italic;
-      padding-top: 10px;
-      padding-bottom: 20px;
-      margin-bottom: 30px;
-      text-transform: none;
-      display: block;
-      margin-block-start: 1em;
-      margin-block-end: 1em;
-      margin-inline-start: 0px;
-      margin-inline-end: 0px;
-      margin: 0 0 33px;
-      // font: abadi-mt-condensed, Arial, Helvetica, sans-serif;
-      -webkit-font-smoothing: antialiased;
-      text-shadow: none;
-      // padding: 0 50px;
+      font-size: 13px;
+      margin-bottom: 0px;
+      padding-bottom: 0px;
     }
+
   }
+}

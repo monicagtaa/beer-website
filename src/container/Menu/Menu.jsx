@@ -60,11 +60,11 @@ const filteredBeers = beersArr.filter((beer) => {
              checkedState= {checkedState}
           />
         </section>
-        {/* <section className="tiles"> */}
-          {/* <div className="all-beers"> */}
+        <section className="tiles">
+          <div className="all-beers">
             <BeerTile title="Beers Types" beersArr={filteredBeers} />
-          {/* </div> */}
-        {/* </section> */}
+          </div>
+        </section>
       </div>
     </>
   );

@@ -8,4 +8,8 @@
   // grid-auto-rows: 60px;
   padding-right: 50px;
   
+  @media screen and (max-width: 800px) {
+    grid-template-columns: repeat(2, 1fr); 
+
+  }
   }

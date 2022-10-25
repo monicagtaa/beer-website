@@ -25,6 +25,11 @@
       border: 1px solid $color-secondary;
       outline: none;
     }
+    @media screen and (max-width: 800px) {
+      min-height: calc(1em + 0.8rem + 1.5px); 
+      font-size: 1rem;
+      font-weight: 300;
+    }
   }
 }
 

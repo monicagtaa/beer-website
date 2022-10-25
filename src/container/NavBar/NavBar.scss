@@ -7,12 +7,6 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    // margin: 20px 0;
-    // padding: 10px;
-    // font-size: 18px;
-    // border: 5px $color-grey solid;
-    // border-radius: 50px;
-    // color: $color-black;
 
   }
 
@@ -57,4 +51,10 @@
     margin-left: 0.2rem;
   }
 
-}
+  @media screen and (max-width: 800px) {
+    .filters-list li {
+      margin-bottom: 0.2rem;
+      font-size: 14px;
+    }
+    }
+  }
