@@ -15,7 +15,7 @@ const BeerCard = (props) => {
   if (card_image.includes("keg") || card_image.includes("cask") ) {
     idFormat = "true";
   }
-  console.log(idFormat)
+
 
 
   return (

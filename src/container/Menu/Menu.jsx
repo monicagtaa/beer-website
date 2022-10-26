@@ -5,13 +5,14 @@ import NavBar from "../NavBar/NavBar";
 
 
 const Menu = (props) => {
-  const { beersArr, filters} = props;
+  const { beersArr, filters, emptySearchMessage} = props;
 
   const [searchTerm, setSearchTerm] = useState("");
   const handleInput = (event) => {
     const cleanInput = event.target.value.toLowerCase();
     setSearchTerm(cleanInput);
   };
+
 
  //https://www.freecodecamp.org/news/how-to-work-with-multiple-checkboxes-in-react/
   /////////////////////////////////////////////////////
@@ -47,6 +48,16 @@ const filteredBeers = beersArr.filter((beer) => {
   && (filtersArr[2].checked ? beer.ph < 4: true )
   && beer.image_url;
 });
+console.log(filteredBeers.length);
+console.log(checkedState);
+
+const search = () => {
+  if (filteredBeers.length >0) {
+   console.log("Yes, we have results in search")
+} else {console.log({emptySearchMessage}) }}
+
+  console.log(search());
+
 
   return (
     <>
@@ -60,11 +71,20 @@ const filteredBeers = beersArr.filter((beer) => {
              checkedState= {checkedState}
           />
         </section>
-        <section className="tiles">
-          <div className="all-beers">
+          <div className="all-beers-tiles">
+          {( filteredBeers.length >0) ? (
             <BeerTile title="Beers Types" beersArr={filteredBeers} />
-          </div>
-        </section>
+            ) : (
+              <div className="empty-search">
+              <p className="empty-search__one"> NO ITEMS FOUND </p>
+              <div className="empty-search__two"> 0 results for <strong>{searchTerm}</strong> </div>
+              <p className="empty-search__three">{emptySearchMessage} </p>
+              {/* <p className="empty-search__three"> HERE. </p> */}
+              </div>
+            )} 
+            
+            </div>
+       
       </div>
     </>
   );
